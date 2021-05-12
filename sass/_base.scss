@@ -1,0 +1,33 @@
+// COLOR VARIABLES
+$color-gray-light-1: #f9f7f6;
+$color-gray-light-2: #aaa;
+
+$color-gray-dark-1: #54483a;
+$color-gray-dark-2: #6d5d4b;
+
+$color-primary: #239eeb;
+$color-secondary: #fdc500;
+
+// RESPONSIVE BREAKPOINTS
+$bp-xl: 75em; // 1200px
+$bp-lg: 62em; // 992px
+$bp-md: 48em; // 768px;
+$bp-sm: 36em; // 576px;
+
+/* *,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  //box-sizing: inherit;
+} */
+
+html {
+  //box-sizing: border-box;
+  font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+}
+
+body {
+  font-family: "Vazir", sans-serif;
+  background-color: $color-gray-light-1;
+}

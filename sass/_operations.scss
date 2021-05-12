@@ -1,0 +1,449 @@
+.operations {
+  .operations-box {
+    overflow: hidden;
+
+    @media only screen and (min-width: $bp-md) {
+      border-radius: 5rem;
+      box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.3);
+    }
+
+    .options {
+      position: relative;
+
+      &__ring-big {
+        height: 30rem;
+        width: 30rem;
+        border-radius: 50%;
+
+        position: absolute;
+        top: 5rem;
+        right: -15rem;
+      }
+      &__ring-small {
+        height: 10rem;
+        width: 10rem;
+        border-radius: 50%;
+
+        position: absolute;
+        top: 14.5rem;
+        right: -5rem;
+      }
+
+      &__list {
+      }
+
+      &__item {
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3),
+          inset 1px 2.5px 3px rgba(0, 0, 0, 0.3),
+          inset 0px -0.3px 2px rgba(0, 0, 0, 0.3);
+        border: 4px #f9f7f1 solid;
+
+        &--1 {
+          width: 4rem;
+          position: absolute;
+          top: 3rem;
+          right: 0;
+        }
+        &--2 {
+          width: 6rem;
+          position: absolute;
+          top: 5rem;
+          right: 6rem;
+        }
+        &--3 {
+          width: 8rem;
+          position: absolute;
+          top: 15rem;
+          right: 11rem;
+        }
+        &--4 {
+          width: 6rem;
+          position: absolute;
+          top: 28rem;
+          right: 6rem;
+        }
+        &--5 {
+          width: 4rem;
+          position: absolute;
+          top: 33rem;
+          right: 0;
+        }
+      }
+
+      &__ring-text {
+        margin-top: 6rem;
+        h2 {
+          font-size: 1.8rem;
+        }
+      }
+
+      &__dots {
+      }
+
+      &__dot {
+        position: absolute;
+        width: 1rem;
+        height: 1rem;
+        background-color: $color-secondary;
+        border-radius: 50%;
+        &--1 {
+          top: 14.5rem;
+          right: 1.5rem;
+        }
+        &--2 {
+          top: 19rem;
+          right: 4.5rem;
+        }
+        &--3 {
+          top: 23.5rem;
+          right: 1.5rem;
+        }
+      }
+    }
+
+    .reminder {
+      margin-top: 20rem;
+      @media only screen and (min-width: $bp-md) {
+        margin-top: 5rem;
+      }
+    }
+
+    .cooperators {
+      position: relative;
+      height: 45rem;
+
+      &__ring-big {
+        height: 30rem;
+        width: 30rem;
+        border-radius: 50%;
+
+        position: absolute;
+        top: 5rem;
+        left: -15rem;
+      }
+      &__ring-small {
+        height: 10rem;
+        width: 10rem;
+        border-radius: 50%;
+
+        position: absolute;
+        top: 14.5rem;
+        left: -5rem;
+      }
+
+      &__list {
+      }
+
+      &__item {
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3),
+          inset 1px 2.5px 3px rgba(0, 0, 0, 0.3),
+          inset 0px -0.3px 2px rgba(0, 0, 0, 0.3);
+        border: 4px #f9f7f1 solid;
+
+        &--1 {
+          width: 4rem;
+          position: absolute;
+          top: 3rem;
+          left: 0;
+        }
+        &--2 {
+          width: 6rem;
+          position: absolute;
+          top: 5rem;
+          left: 6rem;
+        }
+        &--3 {
+          width: 8rem;
+          position: absolute;
+          top: 15rem;
+          left: 11rem;
+        }
+        &--4 {
+          width: 6rem;
+          position: absolute;
+          top: 28rem;
+          left: 6rem;
+        }
+        &--5 {
+          width: 4rem;
+          position: absolute;
+          top: 33rem;
+          left: 0;
+        }
+      }
+
+      &__ring-text {
+        margin-top: 6rem;
+        h2 {
+          font-size: 1.8rem;
+        }
+      }
+
+      &__dots {
+      }
+
+      &__dot {
+        position: absolute;
+        width: 1rem;
+        height: 1rem;
+        background-color: $color-secondary;
+        border-radius: 50%;
+        &--1 {
+          top: 14.5rem;
+          left: 1.5rem;
+        }
+        &--2 {
+          top: 19rem;
+          left: 4.5rem;
+        }
+        &--3 {
+          top: 23.5rem;
+          left: 1.5rem;
+        }
+      }
+
+      //////////////////
+
+      @media only screen and (min-width: $bp-md) {
+        height: 68rem;
+        position: relative;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        align-content: space-between;
+      }
+
+      .cycle {
+        display: flex;
+        justify-content: center;
+        align-content: flex-end;
+
+        &__ring-large {
+          height: 270px;
+          width: 650px;
+          border: 2px solid $color-primary;
+          border-radius: 50%;
+          margin: 20px 80px;
+          transform: rotate3d(1, 0, 0, 40deg);
+          position: absolute;
+        }
+
+        &__ring-small {
+          height: 5.8rem;
+          width: 12rem;
+          border: 2px solid $color-primary;
+          border-radius: 50%;
+          position: absolute;
+          text-align: center;
+          transform: translateY(11rem);
+          & > * {
+            width: 5.5rem;
+            height: 5.5rem;
+            margin: -4rem 0;
+          }
+
+          .dots {
+            transform-origin: center;
+            .dot {
+              width: 1rem;
+              height: 1rem;
+              border-radius: 50%;
+              position: absolute;
+              background-color: $color-secondary;
+              transition: all 1s;
+
+              &--1 {
+                transform: translate(4.5rem, 1.6rem);
+              }
+
+              &--2 {
+                transform: translate(10rem, 6.2rem);
+              }
+
+              &--3 {
+                transform: translate(0rem, 6rem);
+              }
+            }
+          }
+        }
+
+        &__item {
+          position: absolute;
+          width: 5rem;
+          height: 5rem;
+          border-radius: 50%;
+          background-color: #eee;
+          text-align: center;
+          transition: all 1s;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          &--1 {
+            transform: scale(0.8) translate(20%, 62%);
+          }
+
+          &--2 {
+            transform: scale(1) translate(290%, 65%);
+          }
+
+          &--3 {
+            transform: scale(1.3) translate(460%, 130%);
+          }
+
+          &--4 {
+            transform: scale(1.6) translate(300%, 240%);
+          }
+
+          &--5 {
+            transform: scale(2.4) translate(8%, 190%);
+          }
+
+          &--6 {
+            transform: scale(1.6) translate(-300%, 240%);
+          }
+
+          &--7 {
+            transform: scale(1.3) translate(-460%, 130%);
+          }
+
+          &--8 {
+            transform: scale(1) translate(-290%, 65%);
+          }
+        }
+
+        &__image {
+          width: 3rem;
+          height: 3rem;
+        }
+
+        &__btn {
+          border-radius: 50%;
+          width: 3rem;
+          height: 3rem;
+          background-color: $color-gray-light-2;
+          position: relative;
+          transition: all 0.2s;
+
+          &:hover {
+            background-color: $color-secondary;
+          }
+
+          &--left {
+            transform: scale(1) translate(-7rem, 24rem);
+
+            img {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-60%, -50%);
+            }
+
+            &::before {
+              content: "";
+              display: inline-block;
+              min-width: 2rem;
+              min-height: 5rem;
+              border: 2px solid $color-gray-light-2;
+              border-radius: 50%;
+              border-top-color: transparent;
+              border-bottom-color: transparent;
+              border-right-color: transparent;
+              transform: rotate(40deg);
+              margin-top: -3.8rem;
+              margin-left: 2rem;
+            }
+
+            &::after {
+              content: "";
+              display: inline-block;
+              min-width: 2rem;
+              min-height: 5rem;
+              border: 2px solid $color-gray-light-2;
+              border-radius: 50%;
+              border-top-color: transparent;
+              border-bottom-color: transparent;
+              border-right-color: transparent;
+              transform: rotate(-40deg);
+              margin-left: 2rem;
+            }
+          }
+
+          &--right {
+            transform: scale(1) translate(8.8rem, 23.8rem);
+
+            img {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-40%, -50%);
+            }
+
+            &::before {
+              content: "";
+              display: inline-block;
+              min-width: 2rem;
+              min-height: 5rem;
+              border: 2px solid $color-gray-light-2;
+              border-radius: 50%;
+              border-top-color: transparent;
+              border-bottom-color: transparent;
+              border-left-color: transparent;
+              transform: rotate(-40deg);
+              margin-top: -3.8rem;
+              margin-left: -1.1rem;
+            }
+
+            &::after {
+              content: "";
+              display: inline-block;
+              min-width: 2rem;
+              min-height: 5rem;
+              border: 2px solid $color-gray-light-2;
+              border-radius: 50%;
+              border-top-color: transparent;
+              border-bottom-color: transparent;
+              border-left-color: transparent;
+              transform: rotate(40deg);
+              position: absolute;
+              top: 1.7rem;
+              right: 2rem;
+            }
+          }
+        }
+      }
+
+      .caption {
+        background-color: rgba($color-gray-light-1, 0.6);
+        border-radius: 2rem;
+        padding: 1.5rem 6rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30rem;
+
+        &__text {
+          text-align: center;
+          height: 99%;
+
+          transition: all 2s;
+        }
+
+        &__btn {
+          width: 13rem;
+          height: 3rem;
+          color: #fff;
+          background-color: rgba($color-primary, 0.6);
+          border-radius: 0.8rem;
+          border: none;
+          font-size: 1.6rem;
+          font-family: inherit;
+          margin: 1.2rem;
+          padding: 0.2rem 0rem;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
