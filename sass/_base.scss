@@ -7,6 +7,7 @@ $color-gray-dark-2: #6d5d4b;
 
 $color-primary: #239eeb;
 $color-secondary: #fdc500;
+//$color-secondary: #ffffff94;
 
 // RESPONSIVE BREAKPOINTS
 $bp-xl: 75em; // 1200px
@@ -14,20 +15,143 @@ $bp-lg: 62em; // 992px
 $bp-md: 48em; // 768px;
 $bp-sm: 36em; // 576px;
 
-/* *,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  //box-sizing: inherit;
-} */
-
 html {
-  //box-sizing: border-box;
   font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
 }
 
 body {
   font-family: "Vazir", sans-serif;
   background-color: $color-gray-light-1;
+}
+
+//styles for drawer
+.drawer {
+  top: 0;
+  bottom: 0;
+  right: -30rem;
+  width: 30rem;
+  transition-duration: 0.5s;
+  z-index: 2;
+  overflow-y: scroll;
+
+  &__wavy-bg {
+    background: url("../img/drawer.svg");
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 18rem;
+  }
+
+  &__close-btn {
+    width: 3.3rem;
+    height: 3.3rem;
+    display: block;
+    margin: 1rem 1rem 0.4rem auto;
+    font-size: 2.7rem;
+    line-height: 1.1;
+
+    position: relative;
+    z-index: 1;
+  }
+
+  &__log-btn {
+    width: 15rem;
+    height: 4rem;
+    font-size: 1.6rem;
+    margin-bottom: 5rem;
+    border-radius: 0.8rem;
+
+    position: relative;
+    z-index: 1;
+  }
+
+  &__left-border {
+    position: absolute;
+    top: 14.4rem;
+    left: 0;
+    height: 65%;
+    width: 1rem;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    background-color: $color-secondary;
+  }
+}
+
+//These lines are for shadow behind the drawer
+body::before {
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  z-index: 2;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+//These lines are for two fixed rounded circle btn
+.fixed-btn {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  position: fixed;
+  border: 3px $color-primary dashed;
+  z-index: 2;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__text {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: $color-primary;
+    text-align: center;
+  }
+
+  &:hover {
+    box-shadow: 0rem 0rem 5rem rgba($color-primary, 0.6);
+    transform: scale(1.1);
+  }
+
+  &--left {
+    background-color: $color-gray-light-1;
+    bottom: 22%;
+    left: 4%;
+
+    .fixed-btn__img {
+      padding-left: 1.7rem;
+      width: 60%;
+      height: 60%;
+    }
+  }
+
+  &--right {
+    background-color: $color-gray-light-1;
+    bottom: 22%;
+    right: 4%;
+
+    .fixed-btn__img {
+      width: 50%;
+      height: 50%;
+    }
+  }
+
+  opacity: 0;
+  animation: startup_fixed 1s 2s forwards;
+  @keyframes startup_fixed {
+    to {
+      opacity: 1;
+    }
+  }
 }

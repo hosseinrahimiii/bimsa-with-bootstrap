@@ -1,61 +1,78 @@
 header {
-  padding: 5rem;
+  position: relative;
+  padding-top: 2rem;
+  padding-bottom: 5rem;
   background-image: url("../img/insurance.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
+
   @media only screen and (min-width: $bp-md) {
+    padding-top: 5rem;
+    padding-bottom: 15rem;
     background-image: url("../img/asset-1.png");
     background-attachment: fixed;
-  }
 
-  .fixed-btn {
-    width: 12rem;
-    height: 12rem;
-    border-radius: 50%;
-    position: fixed;
-    border: 3px $color-primary dashed;
-    z-index: 2;
-    cursor: pointer;
-    transition: all 0.3s;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    &__text {
-      font-size: 1.5rem;
-      font-weight: 500;
-      color: $color-primary;
-      text-align: center;
+    //styles for wavy background in big mode
+    &::before {
+      content: "";
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 4.5rem;
+      background-image: url("../img/head1.svg");
+      background-position: top;
+      background-repeat: repeat;
+      background-size: cover;
+      padding-right: 1rem;
+      position: absolute;
+      z-index: 2;
+      opacity: 0;
+      animation: startup_header 1s 2s forwards;
     }
 
-    &:hover {
-      box-shadow: 0rem 0rem 5rem rgba($color-primary, 0.6);
-      transform: scale(1.1);
+    &::after {
+      content: "";
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 9rem;
+      background-image: url("../img/head2.svg");
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      z-index: 2;
+      opacity: 0;
+      animation: startup_header 1s 2s forwards;
     }
 
-    &--left {
-      background-color: $color-gray-light-1;
-      bottom: 20%;
-        left: 2%;
-
-      .fixed-btn__img {
-        padding-left: 1.7rem;
-        width: 60%;
-        height: 60%;
+    @keyframes startup_header {
+      to {
+        opacity: 1;
       }
     }
+  }
 
-    &--right {
-      background-color: $color-gray-light-1;
-      bottom: 20%;
-        right: 2%;
+  //styles for wavy background in small mode
+  .head0 {
+    bottom: -1.5rem;
+    left: -6rem;
+    right: 0;
+    position: absolute;
+    z-index: 2;
+    height: 3rem;
+    width: 1200vw;
 
-      .fixed-btn__img {
-        width: 50%;
-        height: 50%;
+    &__item {
+      background-image: url("../img/head0.svg");
+      background-size: cover;
+      height: 4rem;
+      width: 20rem;
+
+      &:not(:first-child) {
+        margin-left: -10.4rem;
       }
     }
   }
@@ -66,12 +83,14 @@ header {
   border-radius: 1rem 1rem 3rem 3rem;
   overflow: hidden;
 
-  max-width: 55rem;
+  max-width: 40rem;
 
   @media only screen and (min-width: $bp-md) {
+    margin-bottom: 5.2rem;
     max-width: 65rem;
   }
   @media only screen and (min-width: $bp-lg) {
+    margin-bottom: 6.5rem;
     max-width: 82rem;
   }
 
@@ -108,7 +127,11 @@ header {
     transition: all 0.2s;
     cursor: pointer;
     margin: 0;
-    height: 18rem;
+    height: 12rem;
+
+    @media only screen and (min-width: $bp-md) {
+      height: 17rem;
+    }
 
     &:hover {
       background-color: white;
@@ -119,8 +142,12 @@ header {
   }
 
   &__img {
-    width: 8rem;
+    width: 6rem;
     margin-bottom: 1.8rem;
+
+    @media only screen and (min-width: $bp-md) {
+      width: 8rem;
+    }
   }
 
   &__text {
@@ -128,6 +155,19 @@ header {
     text-align: center;
     color: $color-primary;
     font-weight: 1000;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+
+    @media only screen and (min-width: $bp-md) {
+      font-size: 1.6rem;
+    }
+  }
+
+  opacity: 0;
+  animation: startup_bime-box 1s 2s forwards;
+
+  @keyframes startup_bime-box {
+    to {
+      opacity: 1;
+    }
   }
 }

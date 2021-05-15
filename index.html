@@ -2,12 +2,10 @@
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Bootstrap CSS -->
+
   <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css" />
   <link rel="shortcut icon" type="image/png" href="img/kisspng-logo-coreldraw-cdr-clip-art-letter-b-1.png" />
 
@@ -15,136 +13,74 @@
 </head>
 
 <body>
-  <nav class="container-fluid bg-white">
-    <div class="row">
-      <div class="col-2 col-md-3 my-auto text-center">
-
-        <a href="#" class="d-none d-md-inline-block nav__text">حساب کاربری</a>
-        <img src="img/person-1.png" alt="account image" class="d-none col-md d-md-inline-block nav__account-img" />
-        <a href="#" class="d-md-none">
-          <img src="img/account.png" alt="account image" />
+  <nav class="navbar navbar-expand bg-white">
+    <ul class="navbar-nav mr-auto ml-5 mx-md-auto">
+      <li class="nav-item">
+        <a href="#" class="nav-link d-none d-md-inline-block navbar__text">حساب کاربری</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link d-none col-md d-md-inline-block navbar__account-img-2" href="#">
+          <img src="img/person-1.png" alt="account image 2" />
         </a>
-
-      </div>
-
-      <div class="d-none col-md-6 d-md-block text-center">
-        <ul class="list-unstyled my-5">
-          <li class="d-inline-block mx-3 nav__text">تماس با ما</li>
-          <li class="d-inline-block mx-3 nav__text">بلاگ</li>
-          <li class="d-inline-block mx-3 nav__text">بیمه های همکار</li>
-          <li class="d-inline-block mx-3 nav__text">فروش سازمانی</li>
-          <li class="d-inline-block mx-3 nav__text">انواع بیمه ها</li>
-        </ul>
-      </div>
-
-      <div class="col col-md-3 my-auto">
-        <figure class="text-center d-flex flex-column-reverse align-items-center d-md-block my-md-3 mb-0">
-          <figcaption class="d-md-inline-block nav__bimsa-text">بیمسا</figcaption>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link d-md-none rounded-circle shadow p-0" href="#">
+          <img src="img/account.png" alt="account image 1" class="navbar__account-img-1" />
+        </a>
+      </li>
+    </ul>
+    <ul class="navbar-nav mx-auto d-none d-md-inline-flex">
+      <li class="nav-item">
+        <a class="nav-link d-inline-block mr-sm-2 mr-lg-5 navbar__text" href="#">تماس با ما</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link d-inline-block mr-sm-2 mx-lg-5 navbar__text" href="#">بلاگ</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link d-inline-block mr-sm-2 mx-lg-5 navbar__text" href="#">بیمه های همکار</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link d-inline-block mr-sm-2 mx-lg-5 navbar__text" href="#">فروش سازمانی</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link d-inline-block mr-sm-2 ml-lg-5 navbar__text" href="#">انواع بیمه ها</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav mx-auto flex-column-reverse flex-md-row text-right">
+      <li class="nav-item">
+        <a class="nav-link d-md-inline-block p-0 navbar__bimsa-text" href="#">بیمسا</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link p-0" href="#">
           <img src="img/kisspng-logo-coreldraw-cdr-clip-art-letter-b-5afd8076374476.3266053715265629342264.png"
-            alt="bimsa logo" class="pr-3 nav__bimsa-logo" />
-        </figure>
-      </div>
+            alt="bimsa logo" class="navbar__bimsa-logo" />
+        </a>
+      </li>
+    </ul>
+    <ul class="navbar-nav ml-auto mr-5 d-md-none">
+      <a class="nav-link rounded-circle shadow p-0" href="#" id="openDrawer">
+        <img src="img/menu (1).png" alt="menu image" class="navbar__menu-img" />
+      </a>
+    </ul>
 
-      <div class="col-2 d-md-none text-center my-auto">
-        <a id="openDrawer" href="#" class="d-md-none"><img src="img/menu (1).png" alt="menu image" /></a>
-      </div>
-    </div>
-
-    <div id="drawer" class="drawer text-center">
-      <div class="drawer__wavy-bg"></div>
-      <button id="closeDrawer" class="btn btn-warning rounded-circle drawer__close-btn text-white">
-        &times;
-      </button>
-      <button class="btn btn-light rounded-lg text-dark drawer__log-btn">ورود / عضویت</button>
-      <ul class="list-unstyled text-right mt-5 mr-5">
-        <li class="mt-4">
-          <a href="#" class="text-decoration-none">
-            <span class="text-secondary mr-3">بیمه شخص ثالث</span>
-            <img src="img/Group -2.png" alt="" class="drawer__list-img">
-          </a>
-        </li>
-        <li class="mt-4">
-          <a href="#" class="text-decoration-none">
-            <span class="text-secondary mr-3"">بیمه بدنه</span>
-            <img src=" img/Mask Group 62.png" alt="" class="drawer__list-img">
-          </a>
-        </li>
-        <li class="mt-4">
-          <a href="#" class="text-decoration-none">
-            <span class="text-secondary mr-3"">بیمه مسافرتی</span>
-            <img src=" img/Mask Group 64.png" alt="" class="drawer__list-img">
-          </a>
-        </li>
-        <li class="mt-4">
-          <a href="#" class="text-decoration-none">
-            <span class="text-secondary mr-3"">بیمه درمان و کرونا</span>
-            <img src=" img/Mask Group 67.png" alt="" class="drawer__list-img">
-          </a>
-        </li>
-        <li class="mt-4">
-          <a href="#" class="text-decoration-none">
-            <span class="text-secondary mr-3"">بیمه عمر</span>
-            <img src=" img/Mask Group 66.png" alt="" class="drawer__list-img">
-          </a>
-        </li>
-        <li class="mt-4">
-          <a href="#" class="text-decoration-none">
-            <span class="text-secondary mr-3"">بیمه موتور سیکلت</span>
-            <img src=" img/Mask Group 65.png" alt="" class="drawer__list-img">
-          </a>
-        </li>
-        <li class="mt-4">
-          <a href="#" class="text-decoration-none">
-            <span class="text-secondary mr-3"">بیمه سازمانی</span>
-            <img src=" img/Mask Group 68.png" alt="" class="drawer__list-img">
-          </a>
-        </li>
-        <li class="mt-4">
-          <a href="#" class="text-decoration-none">
-            <span class="text-secondary mr-3"">بیمه آتش سوزی</span>
-            <img src=" img/Mask Group 63.png" alt="" class="drawer__list-img">
-          </a>
-        </li>
-      </ul>
-
-      <hr />
-
-      <ul class="list-unstyled text-right mt-5 mr-5">
-        <li class="mt-4">
-          <a href="#" class="text-decoration-none">
-            <span class="text-secondary mr-3"">بیمه های همکار</span>
-            <img src=" img/Mask Group 65.png" alt="" class="drawer__list-img">
-          </a>
-        </li>
-        <li class="mt-4" class="text-decoration-none">
-          <a href="#">
-            <span class="text-secondary mr-3"">وبلاگ</span>
-            <img src=" img/Mask Group 68.png" alt="" class="drawer__list-img">
-          </a>
-        </li>
-        <li class="mt-4" class="text-decoration-none">
-          <a href="#">
-            <span class="text-secondary mr-3"">همکاری با بیمسا</span>
-            <img src=" img/Mask Group 63.png" alt="" class="drawer__list-img">
-          </a>
-        </li>
-      </ul>
-    </div>
   </nav>
 
   <header class="d-md-flex justify-content-md-center">
 
-    <figure class="fixed-btn fixed-btn--left d-none d-xl-flex">
-      <img src="img/service4.png" alt="fixed image" class="fixed-btn__img" />
-      <div class="fixed-btn__text">تمدید</div>
-    </figure>
-
-    <figure class="fixed-btn fixed-btn--right d-none d-xl-flex">
-      <img src="img/service3.png" alt="fixed image" class="fixed-btn__img" />
-      <div class="fixed-btn__text">گفت و گو با ما</div>
-    </figure>
+    <!--wavy background in small mode-->
+    <ul class="head0 list-unstyled m-0 p-0 d-md-none">
+      <li class="head0__item d-inline-block"></li>
+      <li class="head0__item d-inline-block"></li>
+      <li class="head0__item d-inline-block"></li>
+      <li class="head0__item d-inline-block"></li>
+      <li class="head0__item d-inline-block"></li>
+      <li class="head0__item d-inline-block"></li>
+      <li class="head0__item d-inline-block"></li>
+      <li class="head0__item d-inline-block"></li>
+    </ul>
 
     <div class="row bime-box mx-auto">
+
       <figure class="col-6 col-md-3 bime-box__item">
         <img src="img/Mask Group 26.png" alt="box image 1" class="bime-box__img" />
         <div class="bime-box__text">بیمه آتش سوزی</div>
@@ -185,24 +121,29 @@
         <img src="img/Mask Group 33.png" alt="box image 8" class="bime-box__img" />
         <div class="bime-box__text">بیمه موتور سیکلت</div>
       </figure>
+
     </div>
+
   </header>
 
   <main class="operations">
-    <div class="operations-box bg-white my-5 container-md">
-
+    <a href="#" class="d-none d-md-block">
+      <img src="img/up-arrow-5.png" alt="" class="down-arrow">
+    </a>
+    
+    <div class="operations-box bg-white container-md">
+      
       <section class="options">
         <div class="row">
-          <div class="col-9 col-md-12 text-center mt-5">
-            <h1 class="text-primary">بیمسا</h1>
-            <h2 class="text-secondary">بیمه آسان</h2>
-            <h2 class="text-secondary">سامانه خرید و مقایسه آنلاین بیمه</h2>
+          <div class="col-9 col-md-12 text-center mt-3">
+            <h1 class="text-primary mt-4">بیمسا</h1>
+            <h2 class="text-primary">بیمه آسان</h2>
+            <h2 class="text-primary">سامانه خرید و مقایسه آنلاین بیمه</h2>
             <span class="options__ring-text d-flex align-items-center justify-content-center d-md-none">
               <h2 class="text-secondary mr-3">پشتیبانی در تمامی مراحل</h2>
               <svg width="16" height="16" class="mr-1">
                 <circle cx="8" cy="8" r="8" fill="yellow" />
               </svg>
-
             </span>
           </div>
 
@@ -262,49 +203,69 @@
       </section>
 
 
-      <section class="reminder">
-        <h2 class="text-secondary text-center">یادآور تمدید یا اقساط بیمه</h2>
-        <form class="row flex-row-reverse justify-content-center">
+      <section class="container reminder">
+        <h2 class="text-secondary text-center mb-5">یادآور تمدید یا اقساط بیمه</h2>
+        <form class="row flex-row-reverse justify-content-center reminder__box">
+
+          <!--yellow and blue circles at the top-->
+          <ul class="col-12 circles">
+            <li class="blue-dot"></li>
+            <li class="yellow-dot"></li>
+            <li class="blue-dot"></li>
+            <li class="yellow-dot"></li>
+            <li class="blue-dot"></li>
+            <li class="yellow-dot"></li>
+            <li class="blue-dot"></li>
+            <li class="yellow-dot"></li>
+            <li class="blue-dot"></li>
+            <li class="yellow-dot"></li>
+            <li class="blue-dot"></li>
+            <li class="yellow-dot"></li>
+            <li class="blue-dot"></li>
+            <li class="yellow-dot"></li>
+          </ul>
+
           <div class="col-12 col-sm-6 col-lg-4 form-group text-center text-sm-right mt-3 px-5">
-            <label class="reminder-box__text text-primary font-weight-bold text-primary font-weight-bold">نوع
+            <label class="reminder__label text-primary font-weight-bold text-primary font-weight-bold">نوع
               بیمه</label>
-            <input type="text" class="reminder-box__input form-control text-center text-sm-right border-primary py-4"
+            <input type="text" class="reminder__input form-control text-center text-sm-right border-primary py-4"
               placeholder="نوع بیمه را انتخاب کنید" />
           </div>
           <div class="col-12 col-sm-6 col-lg-4 form-group text-center text-sm-right mt-3 px-5">
-            <label class="reminder-box__text text-primary font-weight-bold">نحوه تکرار</label>
-            <input type="text" class="reminder-box__input form-control text-center text-sm-right border-primary py-4"
+            <label class="reminder__label text-primary font-weight-bold">نحوه تکرار</label>
+            <input type="text" class="reminder__input form-control text-center text-sm-right border-primary py-4"
               placeholder="نوع بیمه را انتخاب کنید" />
           </div>
           <div class="col-12 col-sm-6 col-lg-4 form-group text-center text-sm-right mt-3 px-5">
-            <label class="reminder-box__text text-primary font-weight-bold">توضیحات یادآور</label>
-            <input type="text" class="reminder-box__input form-control text-center text-sm-right border-primary py-4"
+            <label class="reminder__label text-primary font-weight-bold">توضیحات یادآور</label>
+            <input type="text" class="reminder__input form-control text-center text-sm-right border-primary py-4"
               placeholder="نوع بیمه را انتخاب کنید" />
           </div>
           <div class="col-12 col-sm-6 col-lg-4 form-group text-center text-sm-right mt-3 px-5">
-            <label class="reminder-box__text text-primary font-weight-bold">تاریخ سررسید</label>
-            <input type="text" class="reminder-box__input form-control text-center text-sm-right border-primary py-4"
+            <label class="reminder__label text-primary font-weight-bold">تاریخ سررسید</label>
+            <input type="text" class="reminder__input form-control text-center text-sm-right border-primary py-4"
               placeholder="نوع بیمه را انتخاب کنید" />
           </div>
           <div class="col-12 col-sm-6 col-lg-4 form-group text-center text-sm-right mt-3 px-5">
-            <label class="reminder-box__text text-primary font-weight-bold">استان</label>
-            <input type="text" class="reminder-box__input form-control text-center text-sm-right border-primary py-4"
+            <label class="reminder__label text-primary font-weight-bold">استان</label>
+            <input type="text" class="reminder__input form-control text-center text-sm-right border-primary py-4"
               placeholder="نوع بیمه را انتخاب کنید" />
           </div>
           <div class="col-12 col-sm-6 col-lg-4 form-group text-center text-sm-right mt-3 px-5">
-            <label class="reminder-box__text text-primary font-weight-bold">شهر</label>
-            <input type="text" class="reminder-box__input form-control text-center text-sm-right border-primary py-4"
+            <label class="reminder__label text-primary font-weight-bold">شهر</label>
+            <input type="text" class="reminder__input form-control text-center text-sm-right border-primary py-4"
               placeholder="نوع بیمه را انتخاب کنید" />
           </div>
 
-          <button type="submit" class="col-10 m-5 col-lg-3 btn btn-lg bg-primary btn-block text-white">ثبت</button>
+          <button type="submit"
+            class="col-5 m-5 col-lg-3 btn btn-lg bg-primary btn-block text-white reminder__btn">ثبت</button>
         </form>
       </section>
 
 
       <section class="cooperators">
         <div class="row justify-content-around">
-          <div class="col-4 d-md-none">
+          <div class="col-3 d-md-none">
 
             <div class="cooperators__ring-big border border-primary"></div>
             <div class="cooperators__ring-small border border-primary"></div>
@@ -341,14 +302,14 @@
 
           </div>
 
-          <div class="col-6 col-md-12 text-center mt-5">
-            <h1 class="text-primary mb-5">بیمه های همکار</h1>
-            <h2 class="text-secondary mb-3">بیمه دی</h2>
+          <div class="offset-2 col-7 offset-md-0 d-md-none text-center mt-5">
+            <h2 class="text-primary my-5">بیمه های همکار</h2>
+            <h2 class="text-secondary mb-3 pt-3">بیمه دی</h2>
             <p dir="rtl" class="text-muted px-5 mb-5">
               بیمه دی با ارائه خدمات در زمینه‌های مختلف مثل بیمه عمر، بیمه درمان تکمیلی، بیمه شخص ثالث و بدنه، بیمه
               مسئولیت و مهندسی و سایر بیمه‌ها، در حال حاضر چهارمین شرکت بزرگ بیمه‌ای کشور از لحاظ سهم از بازار است.
             </p>
-            <a href="#" type="button" class="btn btn-primary d-md-none">
+            <a href="#" type="button" class="caption__btn text-decoration-none bg-primary">
               صفحه بیمه
             </a>
           </div>
@@ -414,59 +375,175 @@
       </section>
     </div>
 
+    <a href="#" class="d-none d-md-block">
+      <img src="img/up-arrow.png" alt="" class="up-arrow mx-auto">
+    </a>
+    
   </main>
 
-  <footer class="container-fluid">
-    <div class="row text-center bg-primary p-5  justify-content-lg-between">
+  <footer class="row mx-0 text-center justify-content-lg-between footer">
 
-      <div class="col-12 pb-5 text-white">
-        <h2>بیمسا</h2>
-      </div>
+    <div class="col-12 d-none d-lg-block">
+      <img src="img/kisspng-logo-coreldraw-cdr-clip-art-letter-b-5afd8076374476.3266053715265629342264.png"
+        alt="Bimsa Logo End" class="footer__bimsa-logo" />
+    </div>
 
-      <div class="col-4 order-1 order-md-0 col-lg-2 text-white">
-        <h5 class="py-1">ورود به پنل</h5>
-        <h5 class="py-1">شرایط و قوانین</h5>
-        <h5 class="py-1">سوالات متداول</h5>
-        <h5 class="py-1">همکاری با ما</h5>
-        <h5 class="py-1">تماس با ما</h5>
-        <h5 class="py-1">درباره ما</h5>
-        <h5 class="py-1">فرصت های شغلی</h5>
-      </div>
 
-      <div class="col-4 col-lg-2">
-        <div class="row">
-          <div class="col-6">
-            <img class="footer__logo-large" src="img/_temp-logo-enamad.png" />
-          </div>
-          <div class="col-6">
-            <img class="footer__logo-large" src="img/_temp-logo-samandehi.png" />
-          </div>
-          <div class="col-3">
-            <img class="footer__logo-small mt-5" src="img/telegram-1.png" />
-          </div>
-          <div class="col-3">
-            <img class="footer__logo-small mt-5" src="img/instagram-sketched-1.png" />
-          </div>
-          <div class="col-3">
-            <img class="footer__logo-small mt-5" src="img/twitter-1.png" />
-          </div>
-          <div class="col-3">
-            <img class="footer__logo-small mt-5" src="img/twitter-1.png" />
-          </div>
+    <div class="col-12 d-lg-none px-0 text-white">
+      <h2 style="background-color: #1d90d8;">بیمسا</h2>
+    </div>
+
+    <div class="col-4 order-1 order-md-0 col-lg-2">
+      <ul class="list-unstyled">
+        <li class="pb-2"><a href="#" class="text-decoration-none text-white footer__text">ورود به پنل</a></li>
+        <li class="py-2"><a href="#" class="text-decoration-none text-white footer__text">شرایط و قوانین</a></li>
+        <li class="py-2"><a href="#" class="text-decoration-none text-white footer__text">سوالات متداول</a></li>
+        <li class="py-2"><a href="#" class="text-decoration-none text-white footer__text">همکاری با ما</a></li>
+        <li class="py-2"><a href="#" class="text-decoration-none text-white footer__text">تماس با ما</a></li>
+        <li class="py-2"><a href="#" class="text-decoration-none text-white footer__text">درباره ما</a></li>
+        <li class="pt-2"><a href="#" class="text-decoration-none text-white footer__text">فرصت های شغلی</a></li>
+      </ul>
+    </div>
+
+    <div class="col-4 col-lg-2 pt-5 align-self-center">
+      <div class="row">
+        <div class="col-6">
+          <img class="footer__logo-large" src="img/_temp-logo-enamad.png" />
+        </div>
+        <div class="col-6">
+          <img class="footer__logo-large" src="img/_temp-logo-samandehi.png" />
+        </div>
+        <div class="col-3">
+          <img class="footer__logo-small mt-5" src="img/telegram-1.png" />
+        </div>
+        <div class="col-3">
+          <img class="footer__logo-small mt-5" src="img/instagram-sketched-1.png" />
+        </div>
+        <div class="col-3">
+          <img class="footer__logo-small mt-5" src="img/twitter-1.png" />
+        </div>
+        <div class="col-3">
+          <img class="footer__logo-small mt-5" src="img/twitter-1.png" />
         </div>
       </div>
+    </div>
 
-      <div class="col-4 col-lg-2 text-white">
-        <h5 class="py-1">بیمه شخص ثالث</h5>
-        <h5 class="py-1">بیمه بدنه</h5>
-        <h5 class="py-1">بیمه آتش سوزی</h5>
-        <h5 class="py-1">بیمه مسافرتی</h5>
-        <h5 class="py-1">بیمه عمر</h5>
-        <h5 class="py-1">بیمه متور سیکلت</h5>
-        <h5 class="py-1">بیمه درمان تکمیلی</h5>
-      </div>
+    <div class="col-4 col-lg-2">
+      <ul class="list-unstyled">
+        <li class="pb-2"><a href="#" class="text-decoration-none text-white footer__text">بیمه شخص ثالث</a></li>
+        <li class="py-2"><a href="#" class="text-decoration-none text-white footer__text">بیمه بدنه</a></li>
+        <li class="py-2"><a href="#" class="text-decoration-none text-white footer__text">بیمه آتش سوزی</a></li>
+        <li class="py-2"><a href="#" class="text-decoration-none text-white footer__text">بیمه مسافرتی</a></li>
+        <li class="py-2"><a href="#" class="text-decoration-none text-white footer__text">بیمه عمر</a></li>
+        <li class="py-2"><a href="#" class="text-decoration-none text-white footer__text">بیمه متور سیکلت</a></li>
+        <li class="pt-2"><a href="#" class="text-decoration-none text-white footer__text">بیمه درمان تکمیلی</a></li>
+      </ul>
+    </div>
+
+    <div class="col-12 footer__bottom order-2">
+      <p class="p-2 m-0">تمام حقوق این سایت متعلق به شرکت بیمسا است</p>
     </div>
   </footer>
+
+  <!--Drawer-->
+  <!--styles are in _base.scss-->
+  <div id="drawer" class="text-center bg-white position-fixed drawer">
+    <div class="drawer__wavy-bg"></div>
+    <button type="button" id="closeDrawer" class="btn btn-warning rounded-circle text-white shadow drawer__close-btn">
+      &times;
+    </button>
+    <button class="btn bg-white text-secondary drawer__log-btn">ورود / عضویت</button>
+    <ul class="list-unstyled text-right mt-5 mr-5">
+      <li class="mt-4">
+        <a href="#" class="text-decoration-none">
+          <span class="h4 text-secondary mr-3">بیمه شخص ثالث</span>
+          <img src="img/Group -2.png" alt="">
+        </a>
+      </li>
+      <li class="mt-4">
+        <a href="#" class="text-decoration-none">
+          <span class="h4 text-secondary mr-3">بیمه بدنه</span>
+          <img src=" img/Mask Group 62.png" alt="">
+        </a>
+      </li>
+      <li class="mt-4">
+        <a href="#" class="text-decoration-none">
+          <span class="h4 text-secondary mr-3">بیمه مسافرتی</span>
+          <img src=" img/Mask Group 64.png" alt="">
+        </a>
+      </li>
+      <li class="mt-4">
+        <a href="#" class="text-decoration-none">
+          <span class="h4 text-secondary mr-3">بیمه درمان و کرونا</span>
+          <img src=" img/Mask Group 67.png" alt="">
+        </a>
+      </li>
+      <li class="mt-4">
+        <a href="#" class="text-decoration-none">
+          <span class="h4 text-secondary mr-3">بیمه عمر</span>
+          <img src=" img/Mask Group 66.png" alt="">
+        </a>
+      </li>
+      <li class="mt-4">
+        <a href="#" class="text-decoration-none">
+          <span class="h4 text-secondary mr-3">بیمه موتور سیکلت</span>
+          <img src=" img/Mask Group 65.png" alt="">
+        </a>
+      </li>
+      <li class="mt-4">
+        <a href="#" class="text-decoration-none">
+          <span class="h4 text-secondary mr-3">بیمه سازمانی</span>
+          <img src=" img/Mask Group 68.png" alt="">
+        </a>
+      </li>
+      <li class="mt-4">
+        <a href="#" class="text-decoration-none">
+          <span class="h4 text-secondary mr-3">بیمه آتش سوزی</span>
+          <img src=" img/Mask Group 63.png" alt="">
+        </a>
+      </li>
+    </ul>
+
+    <hr class="bg-primary my-5" />
+
+    <ul class="list-unstyled text-right mr-5">
+      <li class="mt-4">
+        <a href="#" class="text-decoration-none">
+          <span class="h4 text-secondary mr-3">بیمه های همکار</span>
+          <img src=" img/Mask Group 65.png" alt="">
+        </a>
+      </li>
+      <li class="mt-4" class="text-decoration-none">
+        <a href="#">
+          <span class="h4 text-secondary mr-3">وبلاگ</span>
+          <img src=" img/Mask Group 68.png" alt="">
+        </a>
+      </li>
+      <li class="mt-4" class="text-decoration-none">
+        <a href="#">
+          <span class="h4 text-secondary mr-3">همکاری با بیمسا</span>
+          <img src=" img/Mask Group 63.png" alt="">
+        </a>
+      </li>
+    </ul>
+
+
+    <div class="drawer__left-border">
+    </div>
+
+  </div>
+
+  <!--Two fixed rounded circle btn-->
+  <!--styles are in _base.scss-->
+  <figure class="fixed-btn fixed-btn--left d-none d-xl-flex">
+    <img src="img/service4.png" alt="fixed image" class="fixed-btn__img" />
+    <div class="fixed-btn__text">تمدید</div>
+  </figure>
+
+  <figure class="fixed-btn fixed-btn--right d-none d-xl-flex">
+    <img src="img/service3.png" alt="fixed image" class="fixed-btn__img" />
+    <div class="fixed-btn__text">گفت و گو با ما</div>
+  </figure>
 
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>

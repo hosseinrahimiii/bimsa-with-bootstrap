@@ -2,10 +2,16 @@
 $('#openDrawer').on('click', function () {
   var drawer = $('#drawer');
   drawer.css('right', '0');
+
+  var styleElem = document.head.appendChild(document.createElement("style"));
+  styleElem.innerHTML = "body:before {visibility: visible; opacity: 1;}";
 });
 $('#closeDrawer').on('click', function () {
   var drawer = $('#drawer');
   drawer.css('right', '-30rem');
+
+  var styleElem = document.head.appendChild(document.createElement("style"));
+  styleElem.innerHTML = "body:before {visibility: hidden; opacity: 0;}";
 });
 
 
@@ -58,7 +64,10 @@ $(document).ready(function () {
         transform: position0,
       });
 
-      $(".caption__text").text(bime_dey);
+      $(".caption").fadeOut(400, function () {
+        $(".caption").fadeIn(400);
+        $(".caption__text").text(bime_dey);
+      });
     }
 
     if (model == 2) {
@@ -87,7 +96,10 @@ $(document).ready(function () {
         transform: position1,
       });
 
-      $(".caption__text").text(bime_asia);
+      $(".caption").fadeOut(400, function () {
+        $(".caption").fadeIn(400);
+        $(".caption__text").text(bime_asia);
+      });
     }
 
     if (model == 3) {
@@ -116,7 +128,10 @@ $(document).ready(function () {
         transform: position2,
       });
 
-      $(".caption__text").text(bime_novin);
+      $(".caption").fadeOut(400, function () {
+        $(".caption").fadeIn(400);
+        $(".caption__text").text(bime_novin);
+      });
     }
 
     if (model == 4) {
@@ -145,7 +160,10 @@ $(document).ready(function () {
         transform: position3,
       });
 
-      $(".caption__text").text(bime_pasargad);
+      $(".caption").fadeOut(400, function () {
+        $(".caption").fadeIn(400);
+        $(".caption__text").text(bime_pasargad);
+      });
     }
 
     if (model == 5) {
@@ -174,7 +192,10 @@ $(document).ready(function () {
         transform: position4,
       });
 
-      $(".caption__text").text(bime_alborz);
+      $(".caption").fadeOut(400, function () {
+        $(".caption").fadeIn(400);
+        $(".caption__text").text(bime_alborz);
+      });
     }
 
     if (model == 6) {
@@ -203,7 +224,10 @@ $(document).ready(function () {
         transform: position5,
       });
 
-      $(".caption__text").text(bime_iran);
+      $(".caption").fadeOut(400, function () {
+        $(".caption").fadeIn(400);
+        $(".caption__text").text(bime_iran);
+      });
     }
 
     if (model == 7) {
@@ -232,7 +256,10 @@ $(document).ready(function () {
         transform: position6,
       });
 
-      $(".caption__text").text(bime_razi);
+      $(".caption").fadeOut(400, function () {
+        $(".caption").fadeIn(400);
+        $(".caption__text").text(bime_razi);
+      });
     }
 
     if (model == 0) {
@@ -261,7 +288,10 @@ $(document).ready(function () {
         transform: position7,
       });
 
-      $(".caption__text").text(bime_melat);
+      $(".caption").fadeOut(400, function () {
+        $(".caption").fadeIn(400);
+        $(".caption__text").text(bime_melat);
+      });
     }
 
     /*s_model += 1;
@@ -337,7 +367,10 @@ $(document).ready(function () {
         transform: position0,
       });
 
-      $(".caption__text").text(bime_dey);
+      $(".caption").fadeOut(400, function () {
+        $(".caption").fadeIn(400);
+        $(".caption__text").text(bime_dey);
+      });
     }
 
     if (model == 2) {
@@ -366,7 +399,10 @@ $(document).ready(function () {
         transform: position1,
       });
 
-      $(".caption__text").text(bime_asia);
+      $(".caption").fadeOut(400, function () {
+        $(".caption").fadeIn(400);
+        $(".caption__text").text(bime_asia);
+      });
     }
 
     if (model == 3) {
@@ -395,7 +431,10 @@ $(document).ready(function () {
         transform: position2,
       });
 
-      $(".caption__text").text(bime_novin);
+      $(".caption").fadeOut(400, function () {
+        $(".caption").fadeIn(400);
+        $(".caption__text").text(bime_novin);
+      });
     }
 
     if (model == 4) {
@@ -424,7 +463,10 @@ $(document).ready(function () {
         transform: position3,
       });
 
-      $(".caption__text").text(bime_pasargad);
+      $(".caption").fadeOut(400, function () {
+        $(".caption").fadeIn(400);
+        $(".caption__text").text(bime_pasargad);
+      });
     }
 
     if (model == 5) {
@@ -453,7 +495,10 @@ $(document).ready(function () {
         transform: position4,
       });
 
-      $(".caption__text").text(bime_alborz);
+      $(".caption").fadeOut(400, function () {
+        $(".caption").fadeIn(400);
+        $(".caption__text").text(bime_alborz);
+      });
     }
 
     if (model == 6) {
@@ -482,7 +527,10 @@ $(document).ready(function () {
         transform: position5,
       });
 
-      $(".caption__text").text(bime_iran);
+      $(".caption").fadeOut(400, function () {
+        $(".caption").fadeIn(400);
+        $(".caption__text").text(bime_iran);
+      });
     }
 
     if (model == 7) {
@@ -511,7 +559,10 @@ $(document).ready(function () {
         transform: position6,
       });
 
-      $(".caption__text").text(bime_razi);
+      $(".caption").fadeOut(400, function () {
+        $(".caption").fadeIn(400);
+        $(".caption__text").text(bime_razi);
+      });
     }
 
     if (model == 0) {
@@ -540,7 +591,10 @@ $(document).ready(function () {
         transform: position7,
       });
 
-      $(".caption__text").text(bime_melat);
+      $(".caption").fadeOut(400, function () {
+        $(".caption").fadeIn(400);
+        $(".caption__text").text(bime_melat);
+      });
     }
 
     /*s_model -= 1;
